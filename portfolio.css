@@ -1,7 +1,7 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -15,10 +15,11 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-image: url('images/header-background.jpg');
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    background-size: cover;
 }
 
 header h1 {
@@ -31,8 +32,27 @@ header p {
     font-size: 1.2em;
 }
 
-section {
-    padding: 20px 0;
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 50px 0;
 }
 
 h2 {
@@ -40,33 +60,86 @@ h2 {
     color: #333;
 }
 
-.project {
+.project-card {
     background: #fff;
     padding: 15px;
-    margin: 15px 0;
+    margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: transform 0.3s ease;
 }
 
-.project h3 {
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h3 {
     margin-top: 0;
 }
 
-.project a {
-    color: #0066cc;
-    text-decoration: none;
+.project-info p {
+    margin-bottom: 10px;
 }
 
-.project a:hover {
+.project-info a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.project-info a:hover {
     text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
 }
 
 footer {
     background-color: #333;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
 }
 
 footer p {
