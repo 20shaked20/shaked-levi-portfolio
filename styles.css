@@ -1,0 +1,166 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color for contrast */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    width: 90%; /* Adjusted width */
+    max-width: 1200px; /* Added max-width for better responsiveness */
+    margin: 0 auto; /* Centered container */
+    overflow: hidden;
+}
+
+header {
+    background-image: url('images/background.jpeg');
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure background does not repeat */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset margin */
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #e0e0e0; /* Light color for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+.section {
+    padding: 60px 0;
+    background-color: #1e1e1e; /* Dark background for sections */
+}
+
+h2 {
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 2.5em;
+}
+
+.project-card {
+    background: #333; /* Darker background for project cards */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+}
+
+.project-image {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #e0e0e0;
+}
+
+.project-info p {
+    margin-bottom: 15px;
+    color: #b0b0b0; /* Slightly lighter text for project descriptions */
+}
+
+.project-info a {
+    color: #4fc3f7; /* Vibrant link color */
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1e1e1e; /* Dark background for footer */
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-info {
+    background: #333; /* Darker background for contact info */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align text for better layout */
+    color: #e0e0e0; /* Light text color */
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.2em; /* Slightly larger font size for emphasis */
+}
+
+.contact-info a {
+    color: #4fc3f7; /* Vibrant link color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info i {
+    color: #4fc3f7; /* Icon color matching the link color */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+    
+    .project-image {
+        margin-bottom: 20px;
+    }
+}
