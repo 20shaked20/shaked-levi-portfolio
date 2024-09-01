@@ -4,110 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaked Levi - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Shaked Levi</h1>
-            <p>Computer Science Student | Developer | Tech Enthusiast</p>
-            <nav>
+        <nav>
+            <div class="container">
+                <h1 class="logo"><br/></h1>
                 <ul>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>Shaked Levi</h1>
+                <p>Computer Science Graduate | Software Developer</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container" data-aos="fade-up">
-            <h2>About Me</h2>
-            <p>I am a Computer Science student at Ariel University with a strong passion for programming and technology. I enjoy working on diverse projects that challenge my skills and allow me to grow as a developer.</p>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="images/me.jpeg" alt="Shaked Levi" class="profile-pic">
+                    <div class="about-text">
+                        <p>Hello! I'm Shaked Levi, a Computer Science graduate from Ariel University with a deep passion for coding and a strong interest in game development. My journey in technology is driven by a desire to solve complex problems and create innovative solutions.</p>
+                        <p>I thrive on challenges that push my boundaries and allow me to grow. My experience spans object-oriented programming, Agile methodologies, and game development using Unity 2D/3D, which I enjoy as a hobby.</p>
+                        <p>Currently, I'm a NOC Engineer at GONG, and I've also worked as a QA and Deployment Engineer at Bright Data. Beyond coding, I love exploring new technologies, working on new projects, and engaging with the tech community.</p>
+                        <div class="skills">
+                            <h3>Skills:</h3>
+                            <ul>
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>JavaScript</li>
+                                <li>Unity</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="images/dark-times-sherwood.png" alt="Dark Times in Sherwood" class="project-image">
+                        <div class="project-info">
+                            <h3>Dark Times in Sherwood</h3>
+                            <p>A 2D platformer game developed in Unity that immerses players in the dark, mythical world of Sherwood.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/HolyTrie/Dark-Times-In-Sherwood" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://holytrie.itch.io/dark-times-in-sherwood" target="_blank"><i class="fas fa-gamepad"></i> Play</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/firefighters.png" alt="Firefighters Algorithm Project" class="project-image">
+                        <div class="project-info">
+                            <h3>Firefighters Algorithm Project</h3>
+                            <p>Optimizing the Firefighter Problem: Heuristic Improvements and Interactive Visualization.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/The-Firefighters" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://the-firefighters.github.io/WebsiteGit/" target="_blank"><i class="fas fa-globe"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/gnss.jpg" alt="GNSS Raw Measurements" class="project-image">
+                        <div class="project-info">
+                            <h3>GNSS Raw Measurements</h3>
+                            <p>Comprehensive GNSS Data Processing and Visualization: From Raw Data Collection to Advanced Positioning and Web-Based Visualization.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/20shaked20/GNSS-Raw-Measurements" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/ev-sc.png" alt="EV-SC" class="project-image">
+                        <div class="project-info">
+                            <h3>EV-SC</h3>
+                            <p>An Android application to locate electric vehicle charging stations.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/20shaked20/EV-SC" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/walk2talk.png" alt="Walk2Talk" class="project-image">
+                        <div class="project-info">
+                            <h3>Walk2Talk</h3>
+                            <p>A desktop chat application developed in Python.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/20shaked20/walk2talk" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:shakedlevi32@gmail.com">shakedlevi32@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/shaked-levi-lin/" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/20shaked20" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shaked Levi. All rights reserved.</p>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container" data-aos="fade-up">
-            <h2>Projects</h2>
-
-            <div class="project-card">
-                <img src="images/ev-sc.png" alt="Dark Times in Sherwood" class="project-image">
-                <div class="project-info">
-                    <h3>Dark Times in Sherwood</h3>
-                    <p>A 2D platformer game developed in Unity that immerses players in the dark, mythical world of Sherwood.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/HolyTrie/Dark-Times-In-Sherwood">GitHub Repository</a>
-                        <a href="https://holyrie.itch.io/dark-times-in-sherwood">Play on Itch.io</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/ev-sc.png" alt="Firefighters Algorithm Project" class="project-image">
-                <div class="project-info">
-                    <h3>Firefighters Algorithm Project</h3>
-                    <p>Algorithm designed to optimize firefighting strategies using heuristic improvements.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/The-Firefighters/WebsiteGit">GitHub Repository</a>
-                        <a href="https://the-firefighters.github.io/WebsiteGit/">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/ev-sc.png" alt="GNSS Raw Measurements" class="project-image">
-                <div class="project-info">
-                    <h3>GNSS Raw Measurements</h3>
-                    <p>Gathering GNSS data and presenting it on a website.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/20shaked20/GNSS-Raw-Measurements">GitHub Repository</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/ev-sc.png" alt="EV-SC" class="project-image">
-                <div class="project-info">
-                    <h3>EV-SC</h3>
-                    <p>An Android application to locate electric vehicle charging stations.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/20shaked20/EV-SC">GitHub Repository</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/walk2talk.png" alt="Walk2Talk" class="project-image">
-                <div class="project-info">
-                    <h3>Walk2Talk</h3>
-                    <p>A desktop chat application developed in Python.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/20shaked20/walk2talk">GitHub Repository</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container" data-aos="fade-up">
-            <h2>How to Reach Me</h2>
-            <div class="contact-info">
-                <p>You can get in touch with me through the following channels:</p>
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:shakedlevi32@gmail.com">shakedlevi32@gmail.com</a></p>
-                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/shaked-levi-lin/">Shaked Levi</a></p>
-                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/20shaked20">20shaked20</a></p>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    </footer>
 </body>
 </html>
